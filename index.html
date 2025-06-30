@@ -3,39 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu nombre</title>
+  <title>Emilio Serratos</title>
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+
+      background-image: url('fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .top-left-logo,
+    .top-right-logo {
+      position: absolute;
+      top: 20px;
+    }
+
+    .top-left-logo { left: 20px; }
+    .top-right-logo { right: 20px; }
+
+    .top-left-logo img {
+      width: 250px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .top-right-logo img {
+      width: 125px;
+      height: 125px;
+      object-fit: contain;
+    }
+
+    .profile {
+      margin-top: 100px;
       text-align: center;
-      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
     }
-    .container {
-      max-width: 500px;
-      margin: auto;
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid #b1240e;
     }
-    a.button {
-      display: block;
-      margin: 20px auto;
-      padding: 12px;
-      background: #1db954;
+
+    .profile h1 {
+      margin: 15px 0 5px;
+      font-size: 1.8em;
+    }
+
+    .profile p {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    .links {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 0 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #b1240e;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      padding: 14px;
+      border-radius: 30px;
+      font-size: 1em;
       font-weight: bold;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .link-button i {
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    .link-button:hover {
+      background-color: #afaaa9;
+      color: black;
+    }
+
+    .link-button:hover i {
+      color: black;
+    }
+
+    .footer {
+      margin-top: auto;
+      margin-bottom: 20px;
+      font-size: 0.8em;
+      color: #ccc;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    @media screen and (max-width: 480px) {
+      .top-left-logo img {
+        width: 150px;
+        height: auto;
+      }
+
+      .top-right-logo img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .profile img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .link-button {
+        font-size: 0.95em;
+        padding: 12px;
+      }
+
+      .profile h1 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>DJ Vitkan</h1>
-    <p>Conéctate conmigo:</p>
-    <a class="button" href="https://instagram.com/tuusuario" target="_blank">Instagram</a>
-    <a class="button" href="https://www.youtube.com/@tuusuario" target="_blank">YouTube</a>
-    <a class="button" href="https://open.spotify.com/artist/tuusuario" target="_blank">Spotify</a>
-    <a class="button" href="mailto:tucorreo@example.com">Contáctame por correo</a>
+
+  <!-- Logos superiores -->
+  <div class="top-left-logo">
+    <img src="Frasle-Dacomsa2.png" alt="Logo Frasle-Dacomsa">
   </div>
+
+  <div class="top-right-logo">
+    <img src="logo.png" alt="Logo personal">
+  </div>
+
+  <!-- Perfil -->
+  <div class="profile">
+    <img src="emilio.jpg" alt="Avatar">
+    <h1>Emilio Serratos</h1>
+    <p>Jefé Catálogo.</p>
+  </div>
+
+  <!-- Enlaces con íconos -->
+  <div class="links">
+    <a class="link-button" href="https://wa.me/+525525613912" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    <a class="link-button" href="https://www.linkedin.com/in/emilioserratos/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>Linkedin
+    </a>
+    <a class="link-button" href="mailto:jesus.serratos@dacomsa.com">
+      <i class="fas fa-envelope"></i> Contáctame
+    </a>
+    <a class="link-button" href="https://dacomsa.com" target="_blank">
+      <i class="fas fa-link"></i> Dacomsa
+    </a>
+  </div>
+
+  <!-- Pie de página -->
+  <div class="footer">
+    © 2025 Emilio Serratos · Todos los derechos reservados
+  </div>
+
 </body>
 </html>
