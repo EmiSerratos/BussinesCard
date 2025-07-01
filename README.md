@@ -30,7 +30,7 @@ La página está publicada con **GitHub Pages**. Solo necesitas escanear el stic
 3. Sube tus cambios al repositorio y GitHub Pages se actualizará automáticamente.
 
 ## 🔗 Demo
-👉 [[https://TU-USUARIO.github.io](https://emiserratos.github.io/BussinesCard/)]
+👉 [[https://emiserratos.github.io](https://emiserratos.github.io/BussinesCard/)]
 
 ## 💡 Inspiración
 Este diseño toma como referencia la experiencia de **Linktree**, con mejoras visuales, animaciones y control total del código.
